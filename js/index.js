@@ -45,6 +45,7 @@ btn.addEventListener("click", function(){
             // Total Calculation
             const total = document.getElementById('total');
             total.innerText = (totalPrice - discountAmmount).toFixed(2);
+            document.getElementById('input-field').value = '';
         }
         else{
             alert('Invalid Coupon!');

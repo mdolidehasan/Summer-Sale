@@ -25,6 +25,14 @@ for (const item of cards) {
         totalPrice += price;
         // console.log(totalPrice);
 
+        const buyBtn = document.getElementById('buy-btn');
+        if(totalPrice >= 0){
+            buyBtn.removeAttribute('disabled');
+        }
+        else{
+            buyBtn.disabled = false;
+        }
+
         document.getElementById('total-price').innerText = totalPrice.toFixed(2);
     });
 }

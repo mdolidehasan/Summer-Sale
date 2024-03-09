@@ -63,3 +63,7 @@ btn.addEventListener("click", function(){
         alert('Spend minimum 200tk');
     }
 })
+
+function handleAction() {
+    location.reload();
+}
